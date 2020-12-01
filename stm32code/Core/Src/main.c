@@ -238,7 +238,7 @@ int main(void)
 
 	  uint16_t len=enc28j60_packetReceive(net_buf,sizeof(net_buf));
 
-	  /* There are data from ethernet, send it to USB */
+	  /* There is data from ethernet, send it to USB */
 	  if (len>0)
 	  {
 		  *((uint16_t*)(sign_buf + 4)) = len;
